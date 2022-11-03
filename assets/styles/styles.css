@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+h1{ font-size: 5.5em;}
+h2{ font-size: 4.5em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.85em;}
+ol{list-style: none;}
+
+.nav a{
+    font-size: 1.1em;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+     
+}
+
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 0; 
+}
+
+.logo{
+    height: 100px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: all 1s;
+}
+
+header a:hover{
+    color:  #0003a7;
+    font-size: 1.3em;
+}
+
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+
+header{
+        position: fixed;
+        width: 100%;
+}
+
+footer{
+    background-color: rgb(13, 12, 12);
+}
+/* esto es del index */
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 99vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://1.bp.blogspot.com/-cT8WkrpiooY/XzILTB46hwI/AAAAAAADJyA/8i9FoE6sy48AyOaYshUEL6Huyjtzw5RyACLcBGAsYHQ/d/rollos-de-textiles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#inicio h2{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+#inicio a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 1.9em;
+    font-family: 'Dancing Script', cursive;
+}
+
+#inicio a:hover{
+    color:#1466ff;
+}
+
+
+
+/* esto va para la pagina productos */
+
+#productos{
+    width: 100vw;
+    height: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(245,245,245);
+}
+
+
+
+
+.cardProduct__description {
+    padding: 10px;
+}
+
+.cartas-arriba, .cartas-abajo {
+
+    margin-left: 500px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.borderRounded {
+    border-radius: 10px;
+}
+
+.carta h2{
+    font-size: 1.3em;
+}
+
+
+
+.carta-descripcion{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 1em;
+}
+
+.carta{
+    border: 2px solid blue;
+    border-radius: 2%;
+    background-color: rgb(227, 224, 224);
+    width: 890px;
+    height: 580px;
+    margin-right:50px ;
+    justify-content: center;
+    align-items: center;
+}
+
+.comprar{
+    background-color: #0003a7;
+    color: white;
+    font-size: 30px;
+    border-radius: 45%;
+    padding: 12px;
+    position:relative;
+    text-decoration: none;
+}
+
+.comprar:hover{
+    background-color: rgb(14, 11, 95);
+}
