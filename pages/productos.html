@@ -5,22 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/suerytex.jpeg" type="image/x-icon">
     <title>SueryTex</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <a href="index.html"><img src="../assets/img/suerytex.jpeg" alt="SueryTex" class="logo"></a>
-            <nav class="nav">
-                <a href="../index.html">Pagina principal</a>
-                <a href="../pages/productos.html">Productos</a>
-                <a href="../pages/ofertas.html">Ofertas</a>
-                <a href="../pages/nuevo.html">¡Nuevo!</a>
-                <a href="#inicio">Inicio</a>
-            </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="../index.html" style="margin-right: 600px; margin-left: 250px;"><img src="../assets/img/suerytex.jpeg" class="suerytex-logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html" style="color:#1466ff">Inicio</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/productos.html">Todos los productos</a></li>
+                      <li><a class="dropdown-item" href="../pages/ofertas.html">Ofertas</a></li>
+                      <li><a class="dropdown-item" href="../pages/nuevo.html">Nuevo</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contatco</a>
+                  </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
         
         </div>
     </header>
@@ -38,104 +68,141 @@
 
         
             <section id="productos">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="cartas-arriba">
-                        <div class="carta">
-                            <img src="../assets/img/manta-algodon.jpg" alt="" class="carta-imagen  borderRounded">
-                            <h2>Manta de algodon</h2>
-                            <div class="cardProduct__description">
-                                <strong class="cardProduct__description__price">$ 7.000</strong>
-                                <p class="carta-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est illum vitae voluptates consequatur incidunt nemo.</p>
-                                <a href="#" class="comprar">Comprar</a>
-                            </div>
-                        </div>
 
 
-                        <div class="carta">
-                            <img src="../assets/img/telas-algodon.jpg" alt="" class="carta-imagen  borderRounded"> 
-                            <h2>Tela de algodon</h2>
-                            <div class="cardProduct__description">
-                                <strong class="cardProduct__description__price">$ 7.000</strong>
-                                <p class="carta-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est illum vitae voluptates consequatur incidunt nemo.</p>
-                                <a href="#" class="comprar">Comprar</a>
+                        <div class="card" >
+                            
+                            <img src="../assets/img/manta-algodon.jpg"
+                                class="card-img-top" alt="...">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">titulo</h5>
+                                <p class="card-text">Precio: </p>
+                                <p class="card-text">Stock: </p>
+                                <a href="#" class="btn btn-primary">Agregar al carro</a>
                                 
-                            </div>  
-                        </div>
 
-
-                        <div class="carta">
-                            <img src="../assets/img/Tela-para-vestido-rojo.jpg" alt="" class="carta-imagen  borderRounded">
-                            <h2>Tela para vestidos Rojo</h2>
-                            <div class="cardProduct__description">
-                                <strong class="cardProduct__description__price">$ 9.600</strong>
-                                <p class="carta-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est illum vitae voluptates consequatur incidunt nemo.</p>
-                                <a href="#" class="comprar">Comprar</a>
+                                
                             </div>
                         </div>
 
-                        <div class="carta">
-                            <img src="../assets/img/Tela-Poliester-Color-Azul.jpg " alt="" class="carta-imagen borderRounded">
-                            <h2>Tela poliester Azul</h2>
-                            <div class="cardProduct__description">
-                                <strong class="cardProduct__description__price">$ 8.000</strong>
-                                <p class="carta-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est illum vitae voluptates consequatur incidunt nemo.</p>
-                                <a href="#" class="comprar">Comprar</a>
+                        <div class="card" >
+                            
+                            <img src="../assets/img/poliester-estampado.jpg"
+                                class="card-img-top" alt="...">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">titulo</h5>
+                                <p class="card-text">Precio: </p>
+                                <p class="card-text">Stock: </p>
+                                <a href="#" class="btn btn-primary">Agregar al carro</a>
+                                
+
+                                
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            
+                            <img src="../assets/img/surtido-poliester.jpg"
+                                class="card-img-top" alt="...">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">titulo</h5>
+                                <p class="card-text">Precio: <strong>3800$</strong></p>
+                                <p class="card-text">Stock: <strong>50Mts</strong></p>
+                                <a href="#" class="btn btn-primary">Agregar al carro</a>
+
+                                
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            
+                            <img src="../assets/img/surtido-poliester.jpg"
+                                class="card-img-top" alt="...">
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">titulo</h5>
+                                <p class="card-text">Precio: <strong>3800$</strong></p>
+                                <p class="card-text">Stock: <strong>50Mts</strong></p>
+                                <a href="#" class="btn btn-primary">Agregar al carro</a>
+
+                                
                             </div>
                         </div>
 
                     </div>    
                     <div class="cartas-abajo">
-                        <div class="carta">
-                            <img src="../assets/img/surtido-poliester.jpg" alt="" class="carta-imagen  borderRounded">
-                            <h2>Telas Poliester de todos los colores</h2>
-                            <div class="cardProduct__description">
-                                <strong class="cardProduct__description__price">$ 7.500</strong>
-                                <p class="carta-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est illum vitae voluptates consequatur incidunt nemo.</p>
-                                <a href="#" class="comprar">Comprar</a>
+                            <div class="card">
+                            
+                                <img src="../assets/img/surtido-poliester.jpg"
+                                    class="card-img-top" alt="...">
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title">titulo</h5>
+                                    <p class="card-text">Precio: <strong>3800$</strong></p>
+                                    <p class="card-text">Stock: <strong>50Mts</strong></p>
+                                    <a href="#" class="btn btn-primary">Agregar al carro</a>
+
+                                    
+                                </div>
                             </div>
-                        </div>
 
+                            <div class="card">
+                            
+                                <img src="../assets/img/surtido-poliester.jpg"
+                                    class="card-img-top" alt="...">
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title">titulo</h5>
+                                    <p class="card-text">Precio: <strong>3800$</strong></p>
+                                    <p class="card-text">Stock: <strong>50Mts</strong></p>
+                                    <a href="#" class="btn btn-primary">Agregar al carro</a>
 
-
-
-
-                        <div class="carta">
-                            <img src="../assets/img/Telas-para-vestidos-de-fiesta.jpg" alt="" class="carta-imagen  borderRounded">
-                            <h2>Tela para vestidos celeste oscuro</h2>
-                            <div class="cardProduct__description">
-                                <strong class="cardProduct__description__price">$ 9.600</strong>
-                                <p class="carta-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est illum vitae voluptates consequatur incidunt nemo.</p>
-                                <a href="#" class="comprar">Comprar</a>
+                                    
+                                </div>
                             </div>
-                        </div>
-                       
-                        <div class="carta">
-                            <img src="../assets/img/tela-tipo-estampado.jpg" alt="" class="carta-imagen borderRounded">
-                            <h2>Tela tipo estampado surtido 1</h2>
-                            <div class="cardProduct__description">
-                                <strong class="cardProduct__description__price">$ 5.000</strong>
-                                <p class="carta-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est illum vitae voluptates consequatur incidunt nemo.</p>
-                                <a href="#" class="comprar">Comprar</a>
-                            </div>
-                        </div>
 
-                        <div class="carta">
-                            <img src="../assets/img/poliester-estampado.jpg" alt="" class="cata-imagen  borderRounded">
-                            <h2>Tela tipo estampado surtido 2</h2>
-                            <div class="cardProduct__description">
-                                <strong class="cardProduct__description__price">$ 5.500</strong>
-                                <p class="carta-descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est illum vitae voluptates consequatur incidunt nemo.</p>
-                                <a href="#" class="comprar">Comprar</a>
-                            </div>  
-                        </div>
+                            <div class="card">
+                            
+                                <img src="../assets/img/surtido-poliester.jpg"
+                                class="card-img-top" alt="...">
+                            
+                                <div class="card-body">
+                                    <h5 class="card-title">titulo</h5>
+                                    <p class="card-text">Precio: <strong>5000$</strong></p>
+                                    <p class="card-text">Stock: <strong>100Mts</strong></p>
+                                    <a href="#" class="btn btn-primary" >Agregar al carro</a>
+
+                                    
+                                </div>
+                            </div>
+                            <div class="card">
+                            
+                                <img src="../assets/img/surtido-poliester.jpg"
+                                class="card-img-top" alt="...">
+                            
+                                <div class="card-body">
+                                    <h5 class="card-title">titulo</h5>
+                                    <p class="card-text">Precio: <strong>3800$</strong></p>
+                                    <p class="card-text">Stock: <strong>50Mts</strong></p>
+                                    <a href="#" class="btn btn-primary">Agregar al carro</a>
+
+                                
+                                </div>
+                            </div>
                     </div>    
-                </div>    
+                </div>   
             </section>
     
     </main>
 
     <footer>
-
+        a
     </footer>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -12,8 +12,8 @@ body{
 }
 
 
-h1{ font-size: 5.5em;}
-h2{ font-size: 4.5em;}
+h1{ font-size: 6.5em;}
+h2{ font-size: 5.5em;}
 h3{ font-size: 2em;}
 p{ font-size: 1.25em;}
 ul{ list-style: none;}
@@ -33,7 +33,7 @@ ol{list-style: none;}
 
 header{
     background-color: rgb(245,245,245);
-    
+    z-index: 9999;
 }
 
 header .logo{
@@ -53,18 +53,38 @@ header .container{
 }
 
 
-header a{
+header .navbar-nav a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
+    
+}
+
+.nav-link:hover{
+    color: #1466ff;
+}
+
+.nav-item{
+    font-family: 'Roboto';
+    font-size: 25px;
+    margin-right: 20px;
     transition: all 1s;
 }
 
-header a:hover{
-    color:  #0003a7;
-    font-size: 1.3em;
+.nav-item:hover{
+    font-size: 28px;
 }
+
+.dropdown-item{
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.dropdown-item:hover{
+    color: #1466ff;
+}
+
 
 header nav{
     flex-direction: row;
@@ -72,6 +92,9 @@ header nav{
     padding-right: 20px;
 }
 
+.suerytex-logo{
+    height: 100px;
+}
 
 header{
         position: fixed;
@@ -80,6 +103,7 @@ header{
 
 footer{
     background-color: rgb(13, 12, 12);
+    height: 150px;
 }
 /* esto es del index */
 
@@ -105,6 +129,7 @@ footer{
     color: white;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
+    font-size: 100px;
 }
 
 #inicio a{
@@ -124,7 +149,7 @@ footer{
 /* esto va para la pagina productos */
 
 #productos{
-    width: 100vw;
+    width: 99vw;
     height: 1400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -144,12 +169,20 @@ footer{
 
 .cartas-arriba, .cartas-abajo {
 
-    margin-left: 500px;
-    margin-bottom: 50px;
+    margin-left: 380px;
+    
     margin-top: 50px;
     display: flex;
     flex-direction:row;
     justify-content:center;
+}
+
+.cartas-arriba{
+    margin-top: 900px;
+}
+
+.cartas-abajo{
+    margin-bottom: 20px;
 }
 
 .borderRounded {
@@ -181,16 +214,12 @@ footer{
     align-items: center;
 }
 
-.comprar{
-    background-color: #0003a7;
-    color: white;
-    font-size: 30px;
-    border-radius: 45%;
-    padding: 12px;
-    position:relative;
-    text-decoration: none;
-}
 
-.comprar:hover{
-    background-color: rgb(14, 11, 95);
+
+
+
+.card{
+    margin: 20px;
+    width: 12.5vw;
+    
 }
