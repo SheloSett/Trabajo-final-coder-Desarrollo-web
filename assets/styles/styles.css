@@ -9,6 +9,7 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+
 }
 
 
@@ -58,17 +59,16 @@ header .navbar-nav a{
     text-decoration: none;
     font-weight: bold;
     color: black;
-    
+    font-family: 'Roboto';
+    margin-right: 15px;
 }
 
-.nav-link:hover{
+header .navbar-nav a:hover{
     color: #1466ff;
 }
 
 .nav-item{
-    font-family: 'Roboto';
     font-size: 25px;
-    margin-right: 20px;
     transition: all 1s;
 }
 
@@ -77,14 +77,12 @@ header .navbar-nav a{
 }
 
 .dropdown-item{
-    font-family: 'Roboto';
     font-size: 20px;
 }
 
 .dropdown-item:hover{
     color: #1466ff;
 }
-
 
 header nav{
     flex-direction: row;
@@ -99,11 +97,79 @@ header nav{
 header{
         position: fixed;
         width: 100%;
+        
 }
 
 footer{
     background-color: rgb(13, 12, 12);
-    height: 150px;
+    height: auto;
+    color: white;
+    margin-top: auto;
+}
+
+.grupos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.red-social img{
+    height: 70px;
+    width: 80px;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.icono-suerytex{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 300px;
+    width: 300px;
+}
+
+.icono-suerytex img{
+    margin-top: auto;
+    height: 210px;
+    width: 350px;
+}
+
+@media screen and (min-width: 320px) and (max-width:600px){
+    .icono-suerytex img{
+        margin-top: auto;
+        height: 100px;
+        width: 200px;
+    }
+
+    .grupos{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        align-items: center;
+    }
+
+    .icono-suerytex{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items:center ;
+        height: 300px;
+        width: 300px;
+        margin: auto
+    }
+
+    body{
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+    }
+
+    footer{
+        height: auto;
+        margin-top: auto;
+    }
+
 }
 /* esto es del index */
 
@@ -124,6 +190,28 @@ footer{
     background-size: cover;
     background-position: center center;
 }
+
+@media screen and (min-width: 320px) and (max-width:600px){
+    #inicio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 92vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("https://1.bp.blogspot.com/-cT8WkrpiooY/XzILTB46hwI/AAAAAAADJyA/8i9FoE6sy48AyOaYshUEL6Huyjtzw5RyACLcBGAsYHQ/d/rollos-de-textiles.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+}
+
 
 #inicio h2{
     color: white;
@@ -150,76 +238,73 @@ footer{
 
 #productos{
     width: 99vw;
-    height: 1400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
+    height: 1200px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-items: center;
     background-color: rgb(245,245,245);
 }
 
 
 
 
-.cardProduct__description {
-    padding: 10px;
-}
 
-.cartas-arriba, .cartas-abajo {
 
-    margin-left: 380px;
+.cartas{
     
-    margin-top: 50px;
-    display: flex;
-    flex-direction:row;
-    justify-content:center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    margin: auto;
 }
-
-.cartas-arriba{
-    margin-top: 900px;
-}
-
-.cartas-abajo{
-    margin-bottom: 20px;
-}
-
-.borderRounded {
-    border-radius: 10px;
-}
-
-.carta h2{
-    font-size: 1.3em;
-}
-
-
-
-.carta-descripcion{
-    margin-top: 15px;
-    margin-bottom: 20px;
-    text-align: center;
-    line-height: 25px;
-    font-size: 1em;
-}
-
-.carta{
-    border: 2px solid blue;
-    border-radius: 2%;
-    background-color: rgb(227, 224, 224);
-    width: 890px;
-    height: 580px;
-    margin-right:50px ;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
 
 .card{
-    margin: 20px;
-    width: 12.5vw;
+    margin: 30px;
+    margin-bottom: 30px;
+    width: 250px;
+    height: 700px;
+    border: 2px solid black;
+}
+
+.card-body{
+    height: 200px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+    body{
+        height: 100%;
+        width: 100%;
+    }
+
+    #productos{
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        background-color: rgb(245,245,245);
+    }
+
+    .cartas{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 450px ;
+        
+    }
+
+    .card{
+        
+        margin-bottom: 30px;
+        width: 220px;
+        
+    }
     
+
 }
