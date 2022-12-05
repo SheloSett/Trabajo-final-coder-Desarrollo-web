@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/styles/styles.css">
-    <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/styles/css/styles.css">
+    <link rel="stylesheet" href="../assets/styles/css/bootstrap.min.css">
+    <meta name="keywords" content="suerytex telas contacto search nosotros">
+
     <link rel="shortcut icon" href="../assets/img/suerytex.jpeg" type="image/x-icon">
     <title>SueryTex</title>
     
@@ -55,11 +57,50 @@
         
         </div>
     </header>
-
+  <div class="container-fluid">  
     <main>
+      <section id="form-comentarios">
+  
+        <form class="form" >
+          <div class="form1">
+              <div>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Nombre">
+              </div>
 
+              <div>
+                <label for="surname"></label>
+                <input type="text" id="surname" placeholder="Apellido">
+              </div>
+
+              <div>
+                <label for="business"></label>
+                <input type="number" id="age" placeholder="Edad">
+              </div>
+
+              <div>
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="E-mail">
+              </div>
+              
+              <div>
+                <label for="phone"></label>
+                <input type="text" id="phone" placeholder="N° de Telefono">
+              </div>
+
+              <div>
+                <textarea name="comentario" id="comentario-area" cols="46.5" rows="5" placeholder="Escribe aqui tu Comentario, Duda o Pregunta"></textarea>
+              </div>
+
+              <div>
+                <input type="submit" id="submit" value="Enviar">
+              </div>
+          <div>
+              
+        </form>          
+      </section>  
     </main>
-
+  </div>
     <footer>
       <div class="container">
         <div class="grupos">
@@ -76,22 +117,24 @@
                 
                 <div class="box">
                     <h2>Sobre nosotros</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit libero, sed dolorum rem vel in dolores ipsam eaque reprehenderit, distinctio nulla, unde aperiam veniam quo architecto quisquam sunt dignissimos consectetur.</p>
+                    <p>Seguinos en todas nuestras redes!! No te pierdas ninguna de nuestras ofertas y nuestras noticias</p>
                 </div>
                 <small>&copy; 2022 <b>DcHarry</b> - Derechos Reservados</small>
                 <div class="box">
                     <h2>siguenos</h2>
                     <div class="red-social">
-                        <a href="#" class="facebook"><img src="../assets/img/redes/facebook.png" alt="icono facebook"></a>
-                        <a href="#" class="instagram"><img src="../assets/img/redes/Instagram-Icon.png" alt="icono instagram"></a>
-                        <a href="#" class="twiter"><img src="../assets/img/redes/twiter.png" alt="icono twiter"></a>
-                        <a href="#" class="youtube"><img src="../assets/img/redes/yt.png" alt="icono youtube"></a>
+                      <a href="https://www.instagram.com/" class="facebook"><img src="../assets/img/redes/facebook.png" alt="icono facebook"></a>
+                      <a href="https://es-la.facebook.com/" class="instagram"><img src="../assets/img/redes/Instagram-Icon.png" alt="icono instagram"></a>
+                      <a href="https://twitter.com/?lang=es" class="twiter"><img src="../assets/img/redes/twiter.png" alt="icono twiter"></a>
+                      <a href="https://www.youtube.com/" class="youtube"><img src="../assets/img/redes/yt.png" alt="icono youtube"></a>
                     </div>
                 </div>
             </div>
         </div>    
     </div>
     </footer>
+
+   
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
