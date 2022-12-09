@@ -199,12 +199,12 @@ footer {
 	}
 }
 
-@media screen and (min-width: 510px) and (max-width:760px) {
+@media screen and (min-width: 510px) and (max-width:780px) {
 	.nav-item {
 		font-size: 25px;
 		transition: transform 0.3s;
 		&:hover {
-			transform: scale(1.2);
+			transform: scale(1);
 		}
 	}
 
@@ -428,7 +428,7 @@ main {
 	.cartas {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: repeat(4,auto);
+		grid-template-rows: repeat(4,600px);
 	}
 	.card {
 		margin-bottom: 30px;
@@ -439,7 +439,7 @@ main {
 	}
 }
 
-@media screen and (min-width:500px) and (max-width:760px) {
+@media screen and (min-width:500px) and (max-width:880px) {
 	body {
 		height: 100%;
 		width: 100%;
@@ -458,7 +458,7 @@ main {
 	.cartas {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 470px 470px 470px;
+		grid-template-rows: repeat(4,670px);
 	}
 	.card {
 		margin-bottom: 30px;
