@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/styles/css/styles.css">
     <link rel="stylesheet" href="../assets/styles/css/bootstrap.min.css">
     <meta name="keywords" content="suerytex telas productos nuevos vestido">
+    <script src="../assets/js/script.js"></script> 
 
     <link rel="shortcut icon" href="../assets/img/suerytex.jpeg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -66,10 +67,17 @@
                       class="card-img-top" alt="imagen tela para vestido azul">
                   
               <div class="card-body">
-                  <h5 class="card-title">Tela para vestido color azul</h5>
-                  <p class="card-text">Precio: <strong>3800$</strong></p>
-                  <p class="card-text">Stock: <strong>2 Rollos</strong></p>
-                  <a href="#" class="btn--nuevo ">Agregar al carro</a>
+                  <h5 class="card-title">Tela para vestido color azul semi oscuro</h5>
+                  <p>Seleccione una cantidad <select id="cantidad-precio1">
+                    <option value="1000">1 metro</option>
+                    <option value="3000">10 metros</option>
+                    <option value="7000">50 metros</option>
+                    <option value="10.000">100 metros</option>
+                    <option value="20.000">1 rollo </option>
+                </select></p>
+                  <p class="card-text">Precio: <strong><span id="precio-calculado1"></span></strong></p>
+                  <p class="card-text">Stock: <strong>25 Rollos</strong></p>
+                  <button class="btn--nuevo " onclick="calculoDePrecio1()">Agregar al carro</button>
 
                       
               </div>
@@ -82,9 +90,16 @@
             
             <div class="card-body">
                 <h5 class="card-title">Tela para vestidos celeste oscuro</h5>
-                <p class="card-text">Precio: <strong>3800$</strong></p>
-                <p class="card-text">Stock: <strong>3 Rollos</strong></p>
-                <a href="#" class="btn--nuevo ">Agregar al carro</a>
+                <p>Seleccione una cantidad <select id="cantidad-precio2">
+                  <option value="1000">1 metro</option>
+                  <option value="3000">10 metros</option>
+                  <option value="7000">50 metros</option>
+                  <option value="10.000">100 metros</option>
+                  <option value="20.000">1 rollo </option>
+              </select></p>
+                <p class="card-text">Precio: <strong><span id="precio-calculado2"></span></strong></p>
+                <p class="card-text">Stock: <strong>38 Rollos</strong></p>
+                <button class="btn--nuevo " onclick="calculoDePrecio2()">Agregar al carro</button>
 
                 
             </div>
@@ -98,9 +113,16 @@
               
               <div class="card-body">
                   <h5 class="card-title">Tela de algon muchos colores</h5>
-                  <p class="card-text">Precio: <strong>5000$</strong></p>
-                  <p class="card-text">Stock: <strong>2 rollos por color</strong></p>
-                  <a href="#" class="btn--nuevo " >Agregar al carro</a>
+                  <p>Seleccione una cantidad <select id="cantidad-precio3">
+                    <option value="1000">1 metro</option>
+                    <option value="3000">10 metros</option>
+                    <option value="7000">50 metros</option>
+                    <option value="10.000">100 metros</option>
+                    <option value="20.000">1 rollo </option>
+                </select></p>
+                  <p class="card-text">Precio: <strong><span id="precio-calculado3"></span></strong></p>
+                  <p class="card-text">Stock: <strong>26 rollos por color</strong></p>
+                  <button class="btn--nuevo " onclick="calculoDePrecio3()">Agregar al carro</button>
                       
               </div>
           </div>
@@ -112,9 +134,16 @@
                 
             <div class="card-body">
                 <h5 class="card-title">Tela tipo estampada varios modelos</h5>
-                <p class="card-text">Precio: <strong>3800$</strong></p>
-                <p class="card-text">Stock: <strong>1 Rollo por c/m</strong></p>
-                <a href="#" class="btn--nuevo ">Agregar al carro</a>
+                <p>Seleccione una cantidad: <select id="cantidad-precio4">
+                  <option value="1000">1 metro</option>
+                  <option value="3000">10 metros</option>
+                  <option value="7000">50 metros</option>
+                  <option value="10.000">100 metros</option>
+                  <option value="20.000">1 rollo </option>
+              </select></p>
+                <p class="card-text">Precio: <strong><span id="precio-calculado4"></span></strong></p>
+                <p class="card-text">Stock: <strong>31 Rollo por c/m</strong></p>
+                <button class="btn--nuevo " onclick="calculoDePrecio4()">Agregar al carro</button>
 
             </div>
         </div>
@@ -140,8 +169,12 @@
             <div class="grupo-2">
                 
                 <div class="box">
-                    <h2>Sobre nosotros</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit libero, sed dolorum rem vel in dolores ipsam eaque reprehenderit, distinctio nulla, unde aperiam veniam quo architecto quisquam sunt dignissimos consectetur.</p>
+                  <h2>Sobre nosotros</h2>
+                  <p>Seguinos en todas nuestras redes!! No te pierdas ninguna de nuestras ofertas y nuestras noticias.</p>
+                  <p><strong> Para Recibir novedades dejanos tu email aca:</strong></p>
+                  <form action="">
+                    <input type="text" placeholder="Dejanos tu email">
+                    <input type="submit" value="Enviar">
                 </div>
                 <small>&copy; 2022 <b>DcHarry</b> - Derechos Reservados</small>
                 <div class="box">
@@ -157,7 +190,8 @@
         </div>    
       </div>
     </footer>
-  </div>   
+  </div>
+      
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

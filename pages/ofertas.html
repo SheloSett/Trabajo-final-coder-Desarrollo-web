@@ -68,10 +68,17 @@
                   class="card-img-top" alt="imagen tela para vestido rojo">
               
               <div class="card-body">
-                  <h5 class="card-title">Tela para vestido color rojo</h5>
-                  <p class="card-text">Precio: <strong>3800$</strong></p>
-                  <p class="card-text">Stock: <strong>2 Rollos</strong></p>
-                  <a href="#" class="btn--ofertas ">Agregar al carro</a>
+                  <h5 class="card-title">Tela para vestido color rojo claro</h5>
+                  <p>Seleccione una cantidad <select id="cantidad-precio1">
+                    <option value="800">1 metro</option>
+                    <option value="2500">10 metros</option>
+                    <option value="5600">50 metros</option>
+                    <option value="8.000">100 metros</option>
+                    <option value="18.000">1 rollo </option>
+                </select></p>
+                  <p class="card-text">Precio: <strong><span id="precio-calculado1"></span></strong></p>
+                  <p class="card-text">Stock: <strong>20 Rollos</strong></p>
+                  <button class="btn--ofertas" onclick="calculoDePrecio1()">Agregar al carro</button>
 
                   
               </div>
@@ -86,9 +93,16 @@
               
               <div class="card-body">
                   <h5 class="card-title">Poliester estampado 5 modelos</h5>
-                  <p class="card-text">Precio:<strong>3800$</strong> </p>
-                  <p class="card-text">Stock:<strong>3 Rollos c/m</strong> </p>
-                  <a href="#" class="btn--ofertas ">Agregar al carro</a>
+                  <p>Seleccione una cantidad <select id="cantidad-precio2">
+                    <option value="800">1 metro</option>
+                    <option value="2500">10 metros</option>
+                    <option value="5600">50 metros</option>
+                    <option value="8.000">100 metros</option>
+                    <option value="18.000">1 rollo </option>
+                </select></p>
+                  <p class="card-text">Precio: <strong><span id="precio-calculado2"></span></strong></p>
+                  <p class="card-text">Stock:<strong>35 Rollos c/m</strong> </p>
+                  <button class="btn--ofertas" onclick="calculoDePrecio2()">Agregar al carro</button>
               </div>
           </div>
 
@@ -99,9 +113,16 @@
             
             <div class="card-body">
                 <h5 class="card-title">Manta de algodon varios colores</h5>
-                <p class="card-text">Precio:<strong>3800$</strong> </p>
-                <p class="card-text">Stock: <strong>3 Rollos por color</strong></p>
-                <a href="#" class="btn--ofertas ">Agregar al carro</a>
+                <p>Seleccione una cantidad <select id="cantidad-precio3">
+                  <option value="800">1 metro</option>
+                  <option value="2500">10 metros</option>
+                  <option value="5600">50 metros</option>
+                  <option value="8.000">100 metros</option>
+                  <option value="18.000">1 rollo </option>
+              </select></p>
+                <p class="card-text">Precio: <strong><span id="precio-calculado3"></span></strong></p>
+                <p class="card-text">Stock: <strong>30 Rollos C/c</strong></p>
+                <button class="btn--ofertas" onclick="calculoDePrecio3()">Agregar al carro</button>
             </div>
         </div>
 
@@ -111,10 +132,17 @@
                   class="card-img-top" alt="imagen surtido Poliester">
               
               <div class="card-body">
-                  <h5 class="card-title">Surtido Poliester 8 colores</h5>
-                  <p class="card-text">Precio: <strong>3800$</strong></p>
-                  <p class="card-text">Stock: <strong>2 Rollos por color</strong></p>
-                  <a href="#" class="btn--ofertas ">Agregar al carro</a>
+                  <h5 class="card-title">Surtido Poliester 8 colores distintos</h5>
+                  <p>Seleccione una cantidad <select id="cantidad-precio4">
+                    <option value="800">1 metro</option>
+                    <option value="2500">10 metros</option>
+                    <option value="5600">50 metros</option>
+                    <option value="8.000">100 metros</option>
+                    <option value="18.000">1 rollo </option>
+                </select></p>
+                  <p class="card-text">Precio: <strong><span id="precio-calculado4"></span></strong></p>
+                  <p class="card-text">Stock: <strong>12 Rollos C/c</strong></p>
+                  <button class="btn--ofertas" onclick="calculoDePrecio4()">Agregar al carro</button>
 
                   
               </div>
@@ -141,8 +169,12 @@
               <div class="grupo-2">
                   
                   <div class="box">
-                      <h2>Sobre nosotros</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit libero, sed dolorum rem vel in dolores ipsam eaque reprehenderit, distinctio nulla, unde aperiam veniam quo architecto quisquam sunt dignissimos consectetur.</p>
+                    <h2>Sobre nosotros</h2>
+                    <p>Seguinos en todas nuestras redes!! No te pierdas ninguna de nuestras ofertas y nuestras noticias.</p>
+                    <p><strong> Para Recibir novedades dejanos tu email aca:</strong></p>
+                    <form action="">
+                      <input type="text" placeholder="Dejanos tu email">
+                      <input type="submit" value="Enviar">
                   </div>
                   <small>&copy; 2022 <b>DcHarry</b> - Derechos Reservados</small>
                   <div class="box">
@@ -159,6 +191,7 @@
       </div>
       </footer>
     </div>  
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
